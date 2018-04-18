@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46AD11D820864B9600FCCCB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AD11D720864B9600FCCCB6 /* main.m */; };
+		CDE216C82086F47D0076DCAD /* NSURLSession+Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE216C72086F47D0076DCAD /* NSURLSession+Currency.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		46AD11D420864B9600FCCCB6 /* BCurrency */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BCurrency; sourceTree = BUILT_PRODUCTS_DIR; };
 		46AD11D720864B9600FCCCB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDE216C62086F47D0076DCAD /* NSURLSession+Currency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+Currency.h"; sourceTree = "<group>"; };
+		CDE216C72086F47D0076DCAD /* NSURLSession+Currency.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+Currency.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				46AD11D720864B9600FCCCB6 /* main.m */,
+				CDE216C62086F47D0076DCAD /* NSURLSession+Currency.h */,
+				CDE216C72086F47D0076DCAD /* NSURLSession+Currency.m */,
 			);
 			path = BCurrency;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE216C82086F47D0076DCAD /* NSURLSession+Currency.m in Sources */,
 				46AD11D820864B9600FCCCB6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

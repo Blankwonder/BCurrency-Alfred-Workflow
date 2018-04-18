@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSURLSession+Currency.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -31,7 +32,7 @@ int main(int argc, const char * argv[]) {
         } else {
             NSURLResponse *response = nil;
             NSError *error = nil;
-            data = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:url] returningResponse:&response error:&error];
+            data = [NSURLSession sendSynchronousRequest:[NSURLRequest requestWithURL:url] returningResponse:&response error:&error];
             
             if (data.length == 0 || error) {
                 NSDictionary *output = @{@"items": @[@{@"title": [NSString stringWithFormat:@"Error: %@", error.localizedDescription]}]};
