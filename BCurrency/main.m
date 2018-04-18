@@ -65,10 +65,12 @@ int main(int argc, const char * argv[]) {
 //                       }
 //                   }
 //                   ]}
+        
+        NSString *result = [@(value * source) stringValue];
 
         NSDictionary *output = @{@"items": @[@{@"subtitle": [NSString stringWithFormat:@"%@/%@ %g", from, to, value],
-                                               @"title": [NSString stringWithFormat:@"%g", value * source],
-                                               @"arg": [NSString stringWithFormat:@"%g", value * source]
+                                               @"title": result,
+                                               @"arg": result
                                                }]};
         
         NSData *outputData = [NSJSONSerialization dataWithJSONObject:output options:0 error:nil];
